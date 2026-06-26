@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>frontend_app</title>
+  </head>
+  <body>
+    <div class="vanilla-fast-app">
+      <h1 class="my-vanilla-fast-app">To-do List</h1>
+      <div class="line"></div>
+      <div class="second-line"></div>
+    </div>
+    <div class="main-app">
+      <form class="main-app-form" action="index.html" method="post">
+        <label for="username"></label>
+        <button type="submit" id="username">Add Info</button>
+        <input type="text" id="input" value="Add New Task" required>
+      </form>
+    </div>
+    <div id="app">
+      <ul id="user-list">
+
+      </ul>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

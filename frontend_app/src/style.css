@@ -1,0 +1,136 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  background-color: lightblue;
+
+}
+
+#app{
+  width: 290px;
+  height: 290px;
+  background-color: #03A9F4;
+  border-radius: 20px;
+  text-align: center;
+  margin: 30px 50px;
+  box-shadow:
+    0 6px 6px hsl(0deg 0% 0% / 0.5);
+}
+
+.main-app{
+  background-color: blue;
+  width: 290px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 50px;
+  border-radius: 20px;
+  box-shadow:
+    0 6px 6px hsl(0deg 0% 0% / 0.5);
+}
+#username{
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 5px 10px;
+  cursor: pointer;
+  float: left;
+  left: 32px;
+  border-radius: 20px;
+  color: white;
+  background-color: hsl(220 100% 50%);
+  box-shadow: 0 10px 30px hsl(220 100% 25% / 0.8);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#username:hover {
+  outline: none
+  border-color: #4facfe;
+  box-shadow: 0 0 10px rgba(79, 172, 254, 0.8);
+}
+
+#input{
+  height: 60px;
+  border-radius: 20px;
+  margin: 3px;
+  text-align: center;
+  background-color: hsl(190, 40%, 50%);
+  font-size: 13.5px;
+  color: lightgray;
+  box-shadow: 0 10px 30px hsl(220 100% 25% / 0.8);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#input {
+  outline: none
+  border-color: #4facfe;
+  box-shadow: 0 0 10px rgba(79, 172, 254, 0.8);
+}
+
+#user-list {
+  list-style: none;
+  padding: 5px;
+  max-width: 200px;
+  margin: 30px auto;
+}
+
+#user-list li {
+  color: darkgrey;
+  background: linear-gradient(180deg, #1277c7 4%, #091035 98%);
+  margin: 10px -5px;
+  font-family: sans-serif;
+  font-size: 14px;
+  border-radius: 20px;
+  justify-content: space-between;
+  display: flex;
+}
+
+#user-list li button {
+  border-radius: 20px;
+  padding: 8px;
+  background: linear-gradient(180deg, #091035 0%, blue 100% );
+  color: white;
+
+  box-shadow:
+    0 4px 10px rgba(0, 0, 233, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+
+  transition: transform 0.1s ease;
+}
+
+#user-list li button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 6px rgba(0, 0, 230, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.vanilla-fast-app{
+  justify-content: center;
+  align-items: center;
+  margin: 20px 50px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  float: top;
+  top: 0;
+  margin: 5px 20px;
+  color: grey;
+}
+
+.my-vanilla-fast-app {
+  color: hsl(260, 80%, 50%);
+}
+
+.line {
+  background: linear-gradient(180deg, #ff4d4d 0%, #e6000 100%);
+
+}
