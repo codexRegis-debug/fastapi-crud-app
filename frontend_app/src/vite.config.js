@@ -1,11 +1,11 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: 'fastapi-crud-app',
+  base: '/fastapi-crud-app/',
   server: {
     proxy: {
       "/api": {
-        target: "http://127.0.0.1:8000",
+        target: "https://crud-note-app.onrender.com",
         changeOrigin: true,
         rewrite: (path) => path
       },
