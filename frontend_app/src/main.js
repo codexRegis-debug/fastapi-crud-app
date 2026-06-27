@@ -10,6 +10,10 @@ const inputForm = document.querySelector('.main-app-form');
 const input =  document.querySelector('#input')
 const app = document.querySelector('#app');
 
+const API_URL = window.location.hostname.includes('github.io')
+  ? 'https://crud-note-app.onrender.com'
+  : 'http://127.0.0.1:8000';
+
 inputForm.addEventListener("submit", async (e) => {
   e.preventDefault();
   console.log('button clicked');
@@ -20,7 +24,7 @@ inputForm.addEventListener("submit", async (e) => {
   console.log('input value:', input.value);
 
   try {
-    const response = await fetch("http://127.0.0.1:8000/api/submit", {
+    const response = await fetch(`${API_URL}/api/submit`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -41,7 +45,7 @@ inputForm.addEventListener("submit", async (e) => {
 
 
 async function loadData() {
-  const res = await fetch('http://127.0.0.1:8000/users');
+  const res = await fetch(`${API_URL}/users`);
   const users = await res.json();
 
   const userList = document.querySelector('#user-list');
@@ -76,7 +80,7 @@ async function deleteUser(id) {
     return;
   }
 
-  const res = await fetch(`http://127.0.0.1:8000/users/${id}`, {
+  const res = await fetch(`${API_URL}/users/${id}`, {
     method: "DELETE"
   });
 
