@@ -18,7 +18,7 @@ def get_database():
         db.close()
 
 origins = [
-    "https://github.io",
+    "https://fastapa.vercel.app",
     "http://localhost:5173",
 ]
 
