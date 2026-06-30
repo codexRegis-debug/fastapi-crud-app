@@ -18,13 +18,13 @@ def get_database():
         db.close()
 
 origins = [
-    "https://fastapa.vercel.app",
+    "https://fastapa.vercel.app/",
     "http://localhost:5173",
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins = origins
+    allow_origins = origins,
     allow_credentials = True,
     allow_methods = ["*"],
     allow_headers = ["*"],
